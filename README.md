@@ -5,6 +5,9 @@ I, Jon (aka jonwtr), have been gathering discussions from discord, and my own th
 It's the first step in taking a methodological approach in restructuring the Simple Touch repositories.
 LLM's use of language is not always my fovorite, but it does help to bring order in my chaos.
 
+[This was my conversation with Gemini](https://gemini.google.com/share/c696e5ea4923)
+
+My first plan is to now take a deeper dive into the work that Rosa - vitrinekast has already doen a while back in studying the approach with touchstring as an example (repo hidden atm)
 
 # Synthux Firmware Restructuring & Standardization Plan
 
