@@ -9,6 +9,46 @@ LLM's use of language is not always my fovorite, but it does help to bring order
 
 My first plan is to now take a deeper dive into the work that Rosa - vitrinekast has already done a while back in studying the approach with touchstring as an example (repo hidden atm)
 
+Here's a list I made that could serve as the base for a manual for each instrument:
+
+list of things for the json manifest:
+
+- title
+- author
+- instrument hardware (simple touch, spotykach, Audrey ii, custom designer, etc.)
+- short description - categories, tags?
+- microcontroller (going to be defaulting to 99% Daisy Seed with .bin as a result, but we want options to be free)
+- framework (cpp libdaisy, arduino daisyduino, plugdata hvcc)
+- existing ports (cpp, ino, pd, web …)
+- version
+- assets:
+    - .bin
+    - images
+    - yt.be / ig / …
+    - source / project url 1
+    - url 2
+    - other (e.g. mods, .stl)
+- controls:
+    - standard controls:
+      - 2 sliders s36, s37 right
+      - 6 pots s30 - s35 
+      - 12 touchpads p0 - p11
+      - switch 1: 3 positions on/off/on (two pins s09 - s10)
+      - switch 2: 3 positions on/off/on (two pins s07 - s08)
+      - userled 
+    - mods:
+      - Gate pin / clock (no extra circuit)
+      - trs midi
+      - other
+
+often controls will have multiple options when used in combo: eg. P10 + P0/P02 - arpeggiator speed +/-
+
+
+---
+---
+---
+---
+
 # Synthux Firmware Restructuring & Standardization Plan
 
 **Executive Summary**
