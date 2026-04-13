@@ -1,7 +1,29 @@
 # orderorder
 Creating a home to collect plans on the restructuring of things in the synthux github
 
-I, Jon (aka jonwtr), have been gathering discussions from discord, and my own thoughts into one big chunk of text, below is the summary by LLM Gemini.
+## addendum: 13/04/2026
+
+### ideas collector:
+
+Following some conversations on Discord, mad eme realize that some remarks, posts, reports and questions would be better of being gathered in a list of items that could be assigned tags for later reference and / or creating new tasks.
+
+ This would go beyond the topic of only the Simple Touch structure rebuild, but applies to the wider comments made by the community. 
+ - some sort of app / database / system would be handy, again preferably in a non destructive and reusable formatting. E.g. a stream of .md files.
+ - examples on discord: 
+   - troubleshooting FAQ, tips, e.g. someone had trouble with capacitance issues after a solder job, came to the conclusion that some flux might have been the reason, ... etc. 
+   - users posted hardware mods, cases, ...
+   - users sharing their selfmade docs
+   - users sharing selfmade patches, tweaks, scripts, etc.
+   - users sharing other usefull practical info
+   - ...
+ - such messages could contain not just text but also pictures, links, video, ... where do these files get stored.
+       - file management / storage solution for an open (open source?) database (there's a limit for the total repo)
+ - I also have a huge synthux/awesome list, that fits into this (made manually, maybe use an llm to help sort and format it.
+   - i will temporaraly move it inside here (this orderorder repo) as a reference 
+
+---
+
+I, Jon (aka jonwtr), have been gathering discussions from discord on the topic of rerstructuring the GitHub repoo's of Simple Touch instruments, and my own thoughts into one big chunk of text, below is the summary by LLM Gemini.
 It's the first step in taking a methodological approach in restructuring the Simple Touch repositories.
 LLM's use of language is not always my fovorite, but it does help to bring order in my chaos.
 
