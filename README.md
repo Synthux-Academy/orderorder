@@ -23,6 +23,27 @@ Following some conversations on Discord, mad eme realize that some remarks, post
 
 ---
 
+### manifest.json
+
+A file that gathers all available firmwares, easily readable for external applications.
+
+pasting this suggestion post shared on discord by StubeMusic
+
+```
+I actually have this on my TODO list for improvements. I agree that having a proper organization of the firmwares will help the app find the information more reliably.
+
+To make this robust and maintainable, I’d suggest using a firmware manifest approach.
+
+Instead of the app scanning multiple repositories and trying to locate .bin files (whether in releases or the root), we maintain a single manifest.json file in a central Synthux GitHub repo.
+
+This file acts as a registry, listing all available firmware along with descriptions and direct download links.
+The app only needs to make one request to read this file, check which firmware is missing locally, and download it.
+When a new firmware is published, you just add a new entry to the manifest, and it becomes immediately available to all users.
+
+This way, we avoid depending on how each repo is structured, and everything stays predictable and easy to maintain.
+```
+
+---
 I, Jon (aka jonwtr), have been gathering discussions from discord on the topic of rerstructuring the GitHub repoo's of Simple Touch instruments, and my own thoughts into one big chunk of text, below is the summary by LLM Gemini.
 It's the first step in taking a methodological approach in restructuring the Simple Touch repositories.
 LLM's use of language is not always my fovorite, but it does help to bring order in my chaos.
