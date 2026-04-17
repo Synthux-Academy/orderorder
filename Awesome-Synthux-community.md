@@ -1,11 +1,10 @@
 # Awesome Synthux Community
 
-[![Awesome]([https://awesome.re/badge.svg)](https://awesome.re](https://awesome.re/badge.svg)](https://awesome.re))
+[![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-[!Synthux image][(](https://awesome.re/badge.svg)](https://awesome.re)logo.png)*
+[!Synthux image](community-owl/badge.svg) * todo
 
 > This is a community led initiative to share anything of interest related to Synthux and the mission of learning, Building and programming synthesizers.
-> 
 
 Synthux Academy is part of Stichting PTM Academy - a registered non-profit organization based in Rotterdam, Netherlands. It's founder Roey Tsemah has started the organization and community for anyone looking to learn and connect with fellow synth-nerds. The community ranges from music maker enthousiasts, DIY makers as well as professionals. The common goal is to share our love for music and technology.
 
@@ -17,7 +16,7 @@ Synthux has official working firmware for the existing instruments shared on the
 
 Top of this list has the basic official links, further down we're curating a list of community submitted instruments/firmware and other resources either directly or indirectly connected to the Synthux Simple boards.
 
-As we await the building of a full blown community library, we're trying to share direct links to .bin files (for easy uploading to Daisy Seed), as well as the full code and any relevant demo's.
+As we await the building of a full blown community library, we're trying to share direct links to .bin files or repositories (for easy uploading to Daisy Seed), as well as the full code and any relevant demo's.
 
 ### Synthux Community invite and code of conduct
 
