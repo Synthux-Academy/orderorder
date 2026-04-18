@@ -89,6 +89,9 @@ Synthux instruments are genuinely fun to hack on. Simple Touch and Audrey II hav
 
 ### General — applicable to all Simple / Daisy
 
+#### troubleshooting 
+- #todo
+
 [Expanded pins list / spreadsheet with Synthux numbering](https://docs.google.com/spreadsheets/d/1xtg_s1tk8tm-6qNkBLFc6V1L_Mpmu-PCOvv7qEyr9mU/edit?usp=drivesdk) - made by jonwtr, living document, different tabs, handy to pinpoint pins of Daisy and their corresponding numbers and functions in Synthux hardware and code.
 
 [Electrosmith libDaisy pinout list](https://github.com/electro-smith/libDaisy/blob/master/doc/Daisy_Seed_Rev4_Pinout.csv) - CSV pinout table for Daisy Seed Rev4
