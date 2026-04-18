@@ -57,3 +57,19 @@ I hope you’ll join me in the effort, I welcome submissions and ideas, critique
 Jon - @jonwtr
 
 ---
+
+
+
+Addendum; we’re also looking at the structure of the Synthux Discord channels
+
+## **Restructuring the Synthux Discord server channels:**
+
+- under general: adding a general Simple instruments channel for posts applicable to all simple boards
+    - **simple-general**
+        - moving posts between forums is not possible in Discord. We could manually copy some of the most relevant posts from the other channels and link to the archived / closed threads
+    - **closing** the other simple / threads / adding links to new threads
+        - from the forum channels section:
+            - **forum-beginners**
+            - **forum-simple**
+        - Projects by members section:
+            - **simple-synth**

@@ -4,19 +4,32 @@
 
 [!Synthux image](community-owl/badge.svg) * todo
 
-> This is a community led initiative to share anything of interest related to Synthux and the mission of learning, Building and programming synthesizers.
+> [!IMPORTANT]
+> This is an unofficial initiative contributed by the community. Readers are encouraged to comment and contribute.
+
+## Goal / What is this list? / Why is it "awesome"?
+
+**To share anything of interest related to Synthux and the mission of learning, building and programming synthesizers.**
+
+**_Awesome_** lists are a repository, a collection of usefull links about a certain topic. Search GitHub and you'll find pages ranging from [puredata](https://github.com/MikeMorenoDSP/awesome-puredata) to [pen ploters](https://github.com/beardicus/awesome-plotters).
+
+### Synthux by the community for the community - this list is unoffical
+
+In the open‑source world, an awesome list is usually:
+- community‑curated
+- broad in scope
+- opinionated
+- not “official documentation”
+
+→ Hosting this inside the Synthux GitHub account might be counterintuitive, but the idea of keeping it here ensures it's easier to find and reach a the whole community without a direct risk of loosing access to the original.
+
+Community members can apply for maintenance roles, or you could simply add links or suggestions via a pull request or making an "issue". (#todo insert direct issue link)
 
 Synthux Academy is part of Stichting PTM Academy - a registered non-profit organization based in Rotterdam, Netherlands. It's founder Roey Tsemah has started the organization and community for anyone looking to learn and connect with fellow synth-nerds. The community ranges from music maker enthousiasts, DIY makers as well as professionals. The common goal is to share our love for music and technology.
 
-Synthux has a few of their own synths, most available as DIY kits. There's a very open culture, building on the vast amount of available content in the space of music technology.
+Synthux has a few of their own synths, most of which are made available as DIY kits and their source code is open source. There's a very open culture, building on the vast amount of available content in the space of music technology.
 
 While most Synthux kits come with the Electrosmith Daisy Seed microcontroller, the Simple PCB’s do fit other microcontrollers as well.
-
-Synthux has official working firmware for the existing instruments shared on their GitHub page. 
-
-Top of this list has the basic official links, further down we're curating a list of community submitted instruments/firmware and other resources either directly or indirectly connected to the Synthux Simple boards.
-
-As we await the building of a full blown community library, we're trying to share direct links to .bin files or repositories (for easy uploading to Daisy Seed), as well as the full code and any relevant demo's.
 
 ### Synthux Community invite and code of conduct
 
@@ -26,7 +39,33 @@ As we await the building of a full blown community library, we're trying to shar
 
 ---
 
-### TOC: Contents (use a github tool?)
+## Contents
+
+- [Goal / What is this list?](#goal--what-is-this-list--why-is-it-awesome)
+- [Official Synthux links](#official-synthux-links)
+- [Community submitted code and hardware mods](#community-submitted-code-and-hardware-mods-for-synthux-instruments)
+  - [General — applicable to all Simple / Daisy](#general---applicable-to-all-simple--daisy)
+  - [Simple Fix](#simple-fix)
+  - [Simple Touch 2](#simple-touch-2)
+  - [Simple Designer](#simple-designer)
+- [Documentation / guides (Electrosmith Daisy)](#documentation--guides-electrosmith-daisy)
+- [Electrosmith — Daisy](#electrosmith---daisy)
+  - [Arduino / DaisyDuino](#arduino---daisyduino)
+  - [General Arduino related](#general-arduino-related)
+  - [CPP / C++](#cpp--c)
+  - [Plugdata](#plugdata)
+- [Social](#social)
+- [General hardware info](#general-hardware-info)
+  - [DIY tips / tricks](#diy-tips--tricks)
+  - [Components for Simple PCBs](#components-for-simple-pcbs)
+  - [Manufacturing](#manufacturing)
+  - [3D Software](#3d-software)
+  - [Circuit & PCB Design Software](#circuit--pcb-design-software)
+  - [PCB Design resources / lessons and best practices](#pcb-design-resources--lessons-and-best-practices)
+  - [Design, UI, UX](#design-ui-ux)
+  - [Laser cutting](#laser-cutting)
+- [Synthux community members](#synthux-community-members)
+- [Sound and music — made with Synthux related gear](#sound-and-music---made-with-synthux-related-gear)
 
 ---
 
@@ -44,45 +83,43 @@ As we await the building of a full blown community library, we're trying to shar
 
 ---
 
-# Community submitted code and hardware mods for Synthux instruments
+## Community submitted code and hardware mods for Synthux instruments
 
-💡ideally these links would only include a short description and would lead to the community archive website, for now I'm adding basic info and links here as well. 
+Synthux instruments are genuinely fun to hack on. Simple Touch and Audrey II have gotten new looks, extra jacks, and all kinds of personal touches. Simple Fix is a popular first step before people go off and build something entirely their own. Everyone brings their own tools, parts, and ideas — and that's kind of the point.
 
----
-
-### General - applicable to (all) simple / Daisy
+### General — applicable to all Simple / Daisy
 
 [Expanded pins list / spreadsheet with Synthux numbering](https://docs.google.com/spreadsheets/d/1xtg_s1tk8tm-6qNkBLFc6V1L_Mpmu-PCOvv7qEyr9mU/edit?usp=drivesdk) - made by jonwtr, living document, different tabs, handy to pinpoint pins of Daisy and their corresponding numbers and functions in Synthux hardware and code.
 
-[Electrosmith libDaisy pinout list](https://github.com/electro-smith/libDaisy/blob/master/doc/Daisy_Seed_Rev4_Pinout.csv) 
+[Electrosmith libDaisy pinout list](https://github.com/electro-smith/libDaisy/blob/master/doc/Daisy_Seed_Rev4_Pinout.csv) - CSV pinout table for Daisy Seed Rev4
 
 ---
 
-### **Simple Fix**
+### Simple Fix
 
-[Official Synthux YouTube channel “Fix” query](https://www.youtube.com/@SynthuxAcademy/search?query=fix)- This link is a search query with “fix” on the Synthux academy channel, spot the 25 min video 
+[Official Synthux YouTube channel “Fix” query](https://www.youtube.com/@SynthuxAcademy/search?query=fix) - search query with “fix” on the Synthux academy channel, spot the 25 min video 
 
 ---
 
-### **Simple Touch 2**
+### Simple Touch 2
 
-**Code / instruments**
+#### Code / instruments
 
 [SimplePlaits](https://github.com/JorgeVelez/TallerSimple/tree/main/SimplePlaits) - Mutable instruments Plaits by Jorge Velez
 
-- .bin shared; no code (yet); [discord thread](https://discord.com/channels/802197755442626590/1252740022755528775/135310798104218845)
+- `.bin` shared; no code (yet); [discord thread](https://discord.com/channels/802197755442626590/1252740022755528775/135310798104218845)
 
-[Selfdistort Touch](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/FX/selfdistort_touch) - Selftriggering **d**istortion FX - by jonwtr - inspired by Audrey, can function as a regular distortion or as a droning fx. Made with plugdata - patch and instructions available.
+[Selfdistort Touch](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/FX/selfdistort_touch) - Selftriggering distortion FX - by jonwtr - inspired by Audrey, can function as a regular distortion or as a droning fx. Made with plugdata - patch and instructions available.
 
-- [.bin shared; code / pd patch on Github](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/FX/selfdistort_touch); [demo](https://www.youtube.com/watch?v=csmBTfaORss) video YouTube; [discord thread](https://discord.com/channels/802197755442626590/1359248570913394829)
+- [`.bin` shared; code / pd patch on Github](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/FX/selfdistort_touch); [demo](https://www.youtube.com/watch?v=csmBTfaORss) video YouTube; [discord thread](https://discord.com/channels/802197755442626590/1359248570913394829)
 
 [FM BleepBloop](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/FX-Instruments/FM_bleepbloop_touch) - randomized sequencer for a complex FM oscillator Made with plugdata - patch and instructions available. - by jonwtr
 
-- .[.bin shared; code / pd patch on Github](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/FX-Instruments/FM_bleepbloop_touch); [discord thread](https://discord.com/channels/802197755442626590/1393384183602086020)
+- [`.bin` shared; code / pd patch on Github](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/FX-Instruments/FM_bleepbloop_touch); [discord thread](https://discord.com/channels/802197755442626590/1393384183602086020)
 
-**Hardware**
+#### Hardware
 
-**Simple Touch case**
+#### Simple Touch case
 
 [Simple Touch case - markotardito](https://discord.com/channels/802197755442626590/1249745829053468692/1250867297728462968) - shared on [Synthux Discord](https://discord.com/channels/802197755442626590/1249745829053468692/1250867297728462968) - based on design for Plinky
 
@@ -90,7 +127,7 @@ As we await the building of a full blown community library, we're trying to shar
 
 - discord discussion thread
 
-**CV / Clock / mods**
+#### CV / Clock / mods
 
 [Clock sync](https://discord.com/channels/802197755442626590/1249745829053468692) - first thread on the Synthux discord on adding clock and or CV to Simple Touch
 
@@ -98,7 +135,7 @@ As we await the building of a full blown community library, we're trying to shar
 
 ---
 
-### **Simple Designer**
+### Simple Designer
 
 A few of the Synthux and community made instruments are made on top of the Designer PCB, Audrey is probably the most spread and officially sold in the Synthux shop. Therefore Audrey has it’s own section.
 
@@ -106,19 +143,19 @@ A few of the Synthux and community made instruments are made on top of the Desig
 
 [Simple Canvas](https://github.com/Synthux-Academy/simple-designer-instruments/tree/main/official/canvas) - The Canvas is a cordless patchable West Cost Synthesizer. This synthesizer is born from a collaboration with the Synthux Academy. Its design is inspired by the famous Easel by Buchla. design in coöperation with community member Helixbyte
 
-**Audrey (II)**
+#### Audrey (II)
 
 Audrey was first shared / made as a diy project on top of the Simple Designer PCB board. Later Synthux started selling the updated kit and standalone unit.
 
 The code of version one and two is the same, the main difference is that V2 has a dedicated enclosure and front plate option.
 
-**Audrey hardware mods**
+#### Audrey hardware mods
 
 [Gate input, audio input and other Audrey modifications](https://discord.com/channels/802197755442626590/1366503223124561983/1366503223124561983) - Discord thread - by Bruce
 
 [Adding Gate switch to the Audrey II](https://discord.com/channels/802197755442626590/1351119656009863259) - Discord thread - by wireheadinstruments
 
-**Audrey Case / Looks**
+#### Audrey Case / Looks
 
 [Black Limba tilted stand for Audrey II](https://discord.com/channels/802197755442626590/1390880501782413492) - Discord thread - by Nick "Walker" Grimshaw
 
@@ -154,17 +191,17 @@ Some guides will have info about hardware and adding circuits, where possible me
 
 [Daisy Support Site](https://daisy.audio/) - the main portal linking to documentation for hardware and software, community and the shop
 
-[Daisy Web Programmer](https://flash.daisy.audio/) - web based tool to program the Daisy microcontroller (simple blink test; examples; upload .bin; set the bootloader)
+[Daisy Web Programmer](https://flash.daisy.audio/) - web based tool to program the Daisy microcontroller (simple blink test; examples; upload `.bin`; set the bootloader)
 
-[Electrosmith YouTube Channel](https://www.youtube.com/@electrosmithco)
+[Electrosmith YouTube Channel](https://www.youtube.com/@electrosmithco) - official video tutorials and hardware showcases
 
-[Daisy Pinout Table (libDaisy Docs)](https://github.com/electro-smith/libDaisy/blob/master/doc/Daisy_Seed_Rev4_Pinout.csv)
+[Daisy Pinout Table (libDaisy Docs)](https://github.com/electro-smith/libDaisy/blob/master/doc/Daisy_Seed_Rev4_Pinout.csv) - CSV pinout reference for Daisy Seed Rev4
 
-[Daisy Bootloader (libDaisy Docs)](https://github.com/electro-smith/libDaisy/blob/master/doc/md/_a7_Getting-Started-Daisy-Bootloader.md)
+[Daisy Bootloader (libDaisy Docs)](https://github.com/electro-smith/libDaisy/blob/master/doc/md/_a7_Getting-Started-Daisy-Bootloader.md) - guide for setting up and using the Daisy bootloader
 
 ---
 
-### **Arduino - DaisyDuino**
+### Arduino - DaisyDuino
 
 DaisyDuino is very similar to the library for C++, libDaisy, though there are differences, and are not interchangeable.
 
@@ -178,37 +215,37 @@ Note that it is also possible to use e.g. VSCode to program Arduino’s - though
 
 [Zadig Driver](https://www.notion.so/PD-Daisy-docs-meeting-notes-17a26099464b80b5ac96e25f4994e508?pvs=21) - Reset instructions (Windows Only)
 
-[Synthux Simple Fix](https://github.com/Synthux-Academy/simple-fix-instruments) DaisyDuino - Arduino based instruments 
+[Synthux Simple Fix](https://github.com/Synthux-Academy/simple-fix-instruments) - DaisyDuino Arduino based instruments
 
 [Synthux Simple Touch DaisyDuino](https://github.com/Synthux-Academy/simple-touch-instruments/tree/main/daisyduino) - note that the parent folder also contains cpp libDaisy code
 
-- All the Simple Touch 2 instruments are made with Arduino code split into handy blocks. - you will also find the .bin versions you could upload with the webprogrammer.
+- All the Simple Touch 2 instruments are made with Arduino code split into handy blocks. - you will also find the `.bin` versions you could upload with the webprogrammer.
 
 ---
 
-### **General Arduino related**
+### General Arduino related
 
 [Getting Started with Arduino IDE 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2/) - An introduction to the software and workflow
 
 ---
 
-### **CPP / C++**
+### CPP / C++
 
 [Electrosmith documentation](https://daisy.audio/tutorials/cpp-dev-env/) - Toolchain and VSCode installation
 
-[libDaisy Electrosmith documentation](https://daisy.audio/libDaisy/) - libDaisy is a C++ hardware support library for the Electrosmith Daisy platform.
+[libDaisy Electrosmith documentation](https://daisy.audio/software/) - libDaisy is a C++ hardware support library for the Electrosmith Daisy platform.
 
 [libDaisy Github](https://github.com/electro-smith/libDaisy) - official Electrosmith repository
 
 ---
 
-### **Plugdata**
+### Plugdata
 
 Plugdata is a visual programmer based on PureData; though patches made with this method cannot be uploaded as is, HVCC is integrated into Plugdata; it converts pd to compiled code that can be uploaded to Daisy (as well as other formats from full plugins to game related code). HVCC is the Heavy compiler maintained by one of the members who have joined the community: dreamer, aka Wasted Audio. 
 
 [Plugdata.org](http://Plugdata.org) - official plugdata website, stable and nightly releases
 
-[**hvcc](https://wasted-audio.github.io/hvcc/) -** Heavy compiler collection - `hvcc` is a python-based dataflow audio programming language compiler that generates C/C++ code and a variety of specific framework wrappers.
+[hvcc](https://wasted-audio.github.io/hvcc/) - Heavy compiler collection — a Python-based dataflow audio programming language compiler that generates C/C++ code and a variety of specific framework wrappers.
 
 - [getting started (hvcc docs)](https://github.com/Wasted-Audio/hvcc/blob/develop/docs/01.introduction.md)
 - [Tips & Tricks and known limitations (hvcc docs)](https://github.com/Wasted-Audio/hvcc/blob/develop/docs/02.getting_started.md)
@@ -220,26 +257,28 @@ Plugdata is a visual programmer based on PureData; though patches made with this
 
 [Daisy Seed and plugdata](https://jasperkempf.github.io/DIY-Synth-DaisySeed-and-PlugData/) - guide by **Jasper Kempf** that goes over all the basics, useful for all Daisy related designs
 
-[Beginners guide to programming Daisy with Plugdata](https://jonwaterschoot.github.io/plugdata-daisy-simple/)  - unfinished guide started by jonwtr as he was learning plugdata while using Synthux boards
+[Beginners guide to programming Daisy with Plugdata](https://jonwaterschoot.github.io/plugdata-daisy-simple/) - unfinished guide started by jonwtr as he was learning plugdata while using Synthux boards
 
 - can be applied to general Daisy seed - geared towards Simple boards and Simple Touch
 - contains examples on how to implement components like potentiometers and switches
 
-[Hardware test patches](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/HW_test-patches) - a list of simple troubleshooting patches to test components (also contains .bin files that can be used for non PD specific testing)
+[Hardware test patches](https://github.com/jonwaterschoot/Synthux-Simple-Touch-Plugdata/tree/main/HW_test-patches) - a list of simple troubleshooting patches to test components (also contains `.bin` files that can be used for non PD specific testing)
 
 [Awesome Puredata](https://github.com/MikeMorenoDSP/awesome-puredata) - list of Pure Data documentation and other useful resources
 
-**Pure Data / Plug Data lessons:**
+#### Pure Data / Plug Data lessons
 
-[QCGInteractiveMusic - Realtime Music and Sound with Pure Data Vanilla](https://youtu.be/SLx7kjuFheY?si=Al6hmUHhqnK8-pkg)[Sound Codex - Plug Data Introduction](https://www.youtube.com/watch?v=EoOEZYn4xdA)
+[QCGInteractiveMusic - Realtime Music and Sound with Pure Data Vanilla](https://youtu.be/SLx7kjuFheY?si=Al6hmUHhqnK8-pkg) - YouTube series
 
-[Sound SImulator - Pure Data Tutorial Series](https://youtu.be/1o5Wasmd8yU?si=8Cyid-OEyHV6KcKr)
+[Sound Codex - Plug Data Introduction](https://www.youtube.com/watch?v=EoOEZYn4xdA) - YouTube intro
+
+[Sound Simulator - Pure Data Tutorial Series](https://youtu.be/1o5Wasmd8yU?si=8Cyid-OEyHV6KcKr) - YouTube series
 
 ---
 
 ## Social
 
-**Discord servers:**
+### Discord servers
 
 [Join the Synthux community and Discord server](https://www.synthux.academy/join) - by signing up via the official website (free) 
 
@@ -249,11 +288,11 @@ Plugdata is a visual programmer based on PureData; though patches made with this
 
 ---
 
-## General hardware info:
+## General hardware info
 
 ### DIY tips / tricks
 
-**Soldering**
+#### Soldering
 
 Roey has a few tips on soldering in these videos:
 
@@ -263,9 +302,9 @@ Roey has a few tips on soldering in these videos:
 
 [Soldering Simple Designer](https://youtu.be/3HX0H36eN_A?si=NKhLZckNGSWlJS0-) - a demo of soldering components onto the Simple Designer PCB
 
-**Other tutorials:**
+#### Other tutorials
 
-[https://youtu.be/jz67KgHzXVw?si=X0Zl9I1Bv41mLVkE](https://youtu.be/jz67KgHzXVw?si=X0Zl9I1Bv41mLVkE) Another great rundown on how to get perfect solder joints
+[How to get perfect solder joints](https://youtu.be/jz67KgHzXVw?si=X0Zl9I1Bv41mLVkE) - another great rundown on soldering technique
 
 [Adafruit soldering guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering/tools) - a written guide with clear illustrations 
 
@@ -282,22 +321,22 @@ Soldering + electronics tools:
 - helping hands
     - [omnifixo](https://omnifixo.com/en-eu/products/omnifixo-m4-makers-third-hand) - third helping hand, has some nifty features like option to connect power through or isolate, uses clamps and magnets.
 
-### **Components for Simple PCB’s**
+### Components for Simple PCBs
 
 - list of components compatible with Synthux PCB's
 - sensors included in Daisy libraries
 - link to Electrosmith docs
 - non supported / custom components - e.g. the faders that come in the kits can be used in a ‘hacked’ way
 
-### **Manufacturing**
+### Manufacturing
 
-### **3D Software**:
+### 3D Software
 
 [FreeCAD](https://www.freecad.org/) - is an open-source parametric 3D modeler made primarily to design real-life objects of any size.
 
 [Blender](https://www.blender.org/) - open source 3D modeling and animation tool, though not CAD, can be used to create STL and other physical modeling formats, plugins with CAD like abilities exist.  
 
-### **Circuit & PCB Design Software:**
+### Circuit & PCB Design Software
 
 [KiCad](https://www.kicad.org/) - is a free software suite for electronic design automation (EDA). It facilitates the design and simulation of electronic hardware for PCB manufacturing.
 
@@ -313,15 +352,15 @@ Soldering + electronics tools:
 
 [circuito](https://www.circuito.io/) - online app that generates instant and accurate schematics and code for your electronic circuit.
 
-### **PCB Design resources / lessons and best practices:**
+### PCB Design resources / lessons and best practices
 
 - list
 
-### **Design, UI, UX**
+### Design, UI, UX
 
 [Front Panel UI Kit](https://discord.com/channels/802197755442626590/1044290461772304424) - Discord thread - Affinity Designer Template + SVG - by felix | mindful devices
 
-### **Laser cutting**
+### Laser cutting
 
 [Makercase](https://www.makercase.com/#/) - MakerCase is a web-based application for designing boxes or project cases for laser cutters and CNC routers. (options to add kerf, fingers, etc …)
 
@@ -331,28 +370,35 @@ Soldering + electronics tools:
 
 ## Synthux community members
 
-How to phrase / sort these?
+- **Roey Tsemah** - Founder of Synthux 
+  - main force behind all of Synthux, including hardware, software, webdesign, video, tutorials, courses, ... 
+  - musician, designer, teaching product design in academies in The Netherlands. 
+  - [Personal Instagram](https://www.instagram.com/roey.tsemah) - 
+  - [Official Synthux Instagram](https://www.instagram.com/synthux.academy) - own content and reposts of community content
+  - [TravellingSynths YouTube](https://www.youtube.com/c/TravellingSynths) - personal synth and music channel
 
-**Worked on official Synthux instruments:**
 
-Nick Donaldson - worked on Audrey, Spotykach
+- **Nick Donaldson** - made the original Audrey code, main developer for the Spotykach hardware
+  - currently at [WMD](https://wmdevices.com/) (modular synthesizers, eurorack and guitar pedals)
+  - made his own line of eurorack gear: 
+    - [Infrasonic Audio currently indefinetly on hold](https://infrasonicaudio.com/blogs/news/discontinuing-all-modules)
+    - [Interviexw on electrosmith website "Developer Profile: Infrasonic Audio (Nick Donaldson)"](https://electro-smith.com/blogs/seeds-n-circuits/daisy-in-the-wild-warp-core)
 
-Vlad - worked on Simple Touch, author of the official firmware
+- **Vlad / Vladislav Litvinenko / aka Bleeptools** - worked on Simple Touch, author of all the official Simple Touch firmwares (except Audrey Touch), author of the official firmware for Spotykach. 
+  - Spotykach - a collaboration between Roey Tsemah and Vlad
+  - [Bleeptools on Instagram](https://www.instagram.com/bleeptools)
 
-Roey Tsemah - Founder of Synthux 
 
-Helixbyte - worked on Canvas, one of the first big projects built on top of the Simple Designer board.
+- **Helixbyte** - worked on Canvas, one of the first big projects built on top of the Simple Designer board.
 
-**Members who sell / made a (commercial) available project / instrument / working at a synthcompany**
+- **Conatus Modulari / Fabio Bartali** - musician and designer
+  - Active meber at the Synthux headquarters 
+  - Spotykach - manual design and allround help in soldering, building, testing etc.
+  - [Conatus Modulari on YouTube](https://www.youtube.com/@ConatusModulari) - jams and soundscapes
+  - [Conatus Modulari on Instagram](https://www.instagram.com/conatusmodulari)
 
-[Infrasonic Audio](https://www.infrasonicaudio.com/about) - Nick Donaldson – Founder, Owner, and Chief Engineer
 
-- 
-- 
-
-**Community members playing with Synthux instruments**
-
-- 
+Spotykach prerelease supporters 
 - 
 - 
 
@@ -361,24 +407,4 @@ Helixbyte - worked on Canvas, one of the first big projects built on top of the 
 - list
 - list
 
----
 
----
-
----
-
----
-
-Addendum; we’re also looking at the structure of the Synthux Discord channels
-
-## **Restructuring the Synthux Discord server channels:**
-
-- under general: adding a general Simple instruments channel for posts applicable to all simple boards
-    - **simple-general**
-        - moving posts between forums is not possible in Discord. We could manually copy some of the most relevant posts from the other channels and link to the archived / closed threads
-    - **closing** the other simple / threads / adding links to new threads
-        - from the forum channels section:
-            - **forum-beginners**
-            - **forum-simple**
-        - Projects by members section:
-            - **simple-synth**
