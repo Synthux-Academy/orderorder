@@ -5,7 +5,20 @@ Creating a home to collect plans on the restructuring of things in the synthux g
 
 ### ideas collector:
 
-Following some conversations on Discord, mad eme realize that some remarks, posts, reports and questions would be better of being gathered in a list of items that could be assigned tags for later reference and / or creating new tasks.
+--
+
+21/04/2026 shared this message with the community on discord: 
+
+- in the meantime i'm also still trying to come up with a good plan for the Touch instrument folders on GitHub - i just need to allocate some proper time to see what rosa / @vitrinekast  already did; she had a good approach and already applied that on one (hidden) folder.
+- I also have the awesome links list that I've been looking at again; for now it's in the GitHub orderorder folder, stripped a few old introduction things, so i can keep improving it -- and have a few relevant things grouped together
+
+Sometimes i might be overplanning, but i'd rather not make any mistakes. Either way i guess we should keep the "old" grouped Touch repository for any outside links still pointing there. By adding a note and links to the separate new folders, we could point to the new repositories.
+
+
+--
+
+
+Following some conversations on Discord, made me realize that some remarks, posts, reports and questions would be better of being gathered in a list of items that could be assigned tags for later reference and / or creating new tasks.
 
  This would go beyond the topic of only the Simple Touch structure rebuild, but applies to the wider comments made by the community. 
  - some sort of app / database / system would be handy, again preferably in a non destructive and reusable formatting. E.g. a stream of .md files.
