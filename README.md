@@ -1,9 +1,15 @@
 # orderorder
 Creating a home to collect plans on the restructuring of things in the synthux github
 
-## addendum: 13/04/2026
+## ideas collector:
 
-### ideas collector:
+TLDR:
+
+Phase 1: streamline the existing instruments repo's
+Phase 2: create a stripped down template
+Phase 3: a template to use llm's
+Phase 4: collect community projects
+
 
 --
 
