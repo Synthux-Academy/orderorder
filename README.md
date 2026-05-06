@@ -3,6 +3,16 @@ Creating a home to collect plans on the restructuring of things in the synthux g
 
 ## ideas collector:
 
+- include info about mono / stereo routing of the instruments 
+  - input vs output is stereo treated differently or summoned, only accepting mono, which channel etc.
+
+- build a general uploading guide for Daisy, a dedicated video and written guide. 
+  - Insert basic knowledge explaining bootloader, flash and things like memory.   
+  - two uploadmodes of e.g. Plugdata bootloader vs. DFU FS mode etc.
+  - info about alternative uploading methods, official Daisy site, Synthux custom uploader, uploading app by StubeMusic
+
+
+
 TLDR:
 
 Phase 1: streamline the existing instruments repo's
