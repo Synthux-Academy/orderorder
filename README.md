@@ -1,10 +1,41 @@
 # orderorder
 Creating a home to collect plans on the restructuring of things in the synthux github
 
+> [!IMPORTANT]
+> For the moment, I'm just pasting in new notes at the top, gathering ideas from Discord conversations.
+> nothing here is final, these are jonwtr's words, and not official etc.
+
+
 ## ideas collector:
 
+[message on Discord](https://discord.com/channels/802197755442626590/1479142494946984008/1501726629138010214) following up a question on how I (jonwtr) think a unified manual could look like:
+
+Been *dreaming* about a dedicated docs webpage that aggregates info from different instruments, driven by a manifest.json → similar to a mkdocs site i recently built where an mkdocs.yml pulls and combines READMEs.
+
+The idea: each instrument has a JSON with title, description, controls (incl. touch combos & page changes), etc., which gets overlaid on a graphical Simple Touch layout to highlight labels and their functions.
+
+## Inspiration
+- **FM BleepBloop** (mine) → color-coded graphic showing touchpad relationships
+- **OceanTouch** by @stube_12104 → dedicated site with per-layer faceplates and interactive controls
+- **TribalTouch** by Stubemusic → same approach + live playable interactive layout with sounds
+- **NeoTrellis grid** (mine, non-Synthux) → emulator with live manual and an optional overlay screen with contextual pointers, doc info stored in the lua script header using a specific formatting convention
+
+## Proposal for Synthux Simple Touch
+Not interactive in the "play in browser" sense → just highlight/link labels to knobs and pads. Simpler and more feasible, works across different toolchains (C++, Arduino, PlugData…).
+
+**Single GitHub Pages site:**
+- A master source file where repos can be registered
+- One JSON per instrument drives the overlay on a shared Simple Touch graphic
+- Each instrument gets a page with its full README content
+- READMEs can still link out to richer resources (e.g. Stubemusic's custom apps)
+- Ideally READMEs include a standardized controls list → keeps individual repos self-contained and readable on their own too
+
+--
+## Notes on info to add to instruments docs:
 - include info about mono / stereo routing of the instruments 
   - input vs output is stereo treated differently or summoned, only accepting mono, which channel etc.
+
+## General documentation need / idea
 
 - build a general uploading guide for Daisy, a dedicated video and written guide. 
   - Insert basic knowledge explaining bootloader, flash and things like memory.   
@@ -12,6 +43,8 @@ Creating a home to collect plans on the restructuring of things in the synthux g
   - info about alternative uploading methods, official Daisy site, Synthux custom uploader, uploading app by StubeMusic
 
 
+
+--
 
 TLDR:
 
