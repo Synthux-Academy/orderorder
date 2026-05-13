@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthux Touch 2 | Firmware Submission Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div>
+                <h1>Synthux Touch 2</h1>
+                <p>Firmware Submission Builder</p>
+            </div>
+            <div class="header-actions" style="display: flex; gap: 1rem;">
+                <button id="btn-template" class="btn-secondary">📄 Download Template</button>
+                <input type="file" id="import_file" accept=".json" style="display: none;">
+                <button id="btn-import" class="btn-secondary">📤 Import Submission JSON</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard">
+        <section class="card">
+            <h2 class="section-title">1. Firmware Details</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fw_id">Firmware ID (e.g., touch-bass)</label>
+                    <input type="text" id="fw_id" required>
+                </div>
+                <div class="form-group">
+                    <label for="fw_name">Firmware Name</label>
+                    <input type="text" id="fw_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="fw_type">Type / Category</label>
+                    <input type="text" id="fw_type" placeholder="e.g., Generative Groovebox">
+                </div>
+                <div class="form-group">
+                    <label for="fw_author">Author</label>
+                    <input type="text" id="fw_author">
+                </div>
+                <div class="form-group">
+                    <label for="fw_bin">Binary URL (.bin)</label>
+                    <input type="url" id="fw_bin" placeholder="https://github.com/...">
+                </div>
+                <div class="form-group">
+                    <label for="fw_source">Source URL</label>
+                    <input type="url" id="fw_source" placeholder="https://github.com/...">
+                </div>
+                <div class="form-group full-width">
+                    <label for="fw_desc">Description</label>
+                    <textarea id="fw_desc" rows="2"></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label>Images</label>
+                    <div class="image-upload-area">
+                        <div class="upload-box">
+                            <label for="img_main" class="btn-secondary upload-btn">Upload Main Image</label>
+                            <input type="file" id="img_main" accept="image/*" style="display:none;">
+                            <div id="main-image-preview" class="img-preview-grid"></div>
+                        </div>
+                        <div class="upload-box">
+                            <label for="img_other" class="btn-secondary upload-btn">Add Other Images</label>
+                            <input type="file" id="img_other" accept="image/*" multiple style="display:none;">
+                            <div id="other-images-preview" class="img-preview-grid"></div>
+                        </div>
+                    </div>
+                    <small class="helper-text">Images are referenced by filename in the JSON. Include the actual image files in your GitHub submission.</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="card border-accent">
+            <h2 class="section-title">2. Add Hardware Mapping</h2>
+            <form id="mapping-form">
+                <div class="mapping-builder-grid">
+                    
+                    <div class="form-group full-width">
+                        <label for="map_state">Operating State / Context</label>
+                        <input type="text" id="map_state" placeholder="e.g., Global Default, Voice Edit (Hold P03-P09), Shift Layer" value="Global Default">
+                        <small class="helper-text" style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem; display: block;">If this mapping requires entering a specific mode first, define it here. Leave as 'Global Default' for standard controls.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="primary_control">Primary Control</label>
+                        <select id="primary_control" required>
+                            <option value="" disabled selected>Select hardware ID</option>
+                            <optgroup label="Knobs">
+                                <option value="S30">S30</option><option value="S31">S31</option><option value="S32">S32</option><option value="S33">S33</option><option value="S34">S34</option><option value="S35">S35</option><option value="S36">S36</option><option value="S37">S37</option>
+                            </optgroup>
+                            <optgroup label="Switches">
+                                <option value="S07-S08">S07-S08</option><option value="S09-S10">S09-S10</option>
+                            </optgroup>
+                            <optgroup label="Pads">
+                                <option value="P00">P00</option><option value="P01">P01</option><option value="P02">P02</option><option value="P03">P03</option><option value="P04">P04</option><option value="P05">P05</option><option value="P06">P06</option><option value="P07">P07</option><option value="P08">P08</option><option value="P09">P09</option><option value="P10">P10</option><option value="P11">P11</option><option value="P03-P09">P03-P09 (Range)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Momentary Modifiers (Tags)</label>
+                        <div class="modifier-input-group">
+                            <select id="modifier_select">
+                                <option value="" disabled selected>Add modifier...</option>
+                                </select>
+                            <button type="button" id="btn-add-modifier" class="btn-secondary">+</button>
+                        </div>
+                        <div id="active-modifiers" class="tag-container mt-2"></div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="map_param">Parameter Name</label>
+                        <input type="text" id="map_param" placeholder="e.g., Filter Cutoff" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="map_desc">Description</label>
+                        <textarea id="map_desc" rows="2" placeholder="e.g., Hold P10 and turn to change pitch."></textarea>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                    <button type="submit" id="btn-save-mapping" class="btn-primary">Save Mapping</button>
+                    <button type="button" id="btn-cancel-edit" class="btn-secondary" style="display: none;">Cancel Edit</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">3. Connectivity & MIDI</h2>
+            <div class="features-grid">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="feat_usb_midi"> USB MIDI Support
+                </label>
+                <div class="form-group">
+                    <label for="feat_sync">External Sync Note</label>
+                    <input type="text" id="feat_sync" placeholder="e.g., via USB MIDI Clock, or empty">
+                </div>
+            </div>
+            
+            <hr class="divider">
+            
+            <h3 class="subsection-title">MIDI CC Map</h3>
+            <div class="cc-builder">
+                <div class="cc-inputs">
+                    <input type="number" id="cc_number" placeholder="CC #" min="0" max="127">
+                    <input type="text" id="cc_param" placeholder="Parameter (e.g., Filter Cutoff)">
+                    <button type="button" id="btn-add-cc" class="btn-secondary">Add CC</button>
+                </div>
+                <div id="cc-list" class="tag-container"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Saved Mappings</h2>
+            <div id="saved-mappings-container" class="saved-mappings-grid">
+                <div class="empty-state">No mappings added yet.</div>
+            </div>
+        </section>
+
+        <section class="card output-section">
+            <div class="output-header">
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="json-view">submission.json</button>
+                    <button class="tab-btn" data-target="md-view">README.md</button>
+                </div>
+                <div class="export-actions">
+                    <button id="btn-copy" class="btn-secondary">Copy</button>
+                    <button id="btn-download" class="btn-primary">Download</button>
+                </div>
+            </div>
+            
+            <div class="output-content">
+                <pre id="json-view" class="code-view active"></pre>
+                <pre id="md-view" class="code-view"></pre>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

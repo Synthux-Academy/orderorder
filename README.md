@@ -6,6 +6,46 @@ Creating a home to collect plans on the restructuring of things in the synthux g
 > nothing here is final, these are jonwtr's words, and not official etc.
 
 
+## 13/05/2026 Update
+
+- StubeMusic has made an example of a tool that could be used for creating a json file that contains all the details to control a firmware.
+  - the idea revealed a problematic situation, making it hard to find a framework that would work in any situation and that might be overcomplicated for a simple firmware.
+
+I'm saving the files / template he created here for future reference, I do suggest we make a simpler version of this that could help make README.md files.
+
+[Find the template builder here](/SimpleTouchTemplatePlans/json-submitter)
+
+--
+
+As for actual templates to make new instruments off: there's already a repo with only arduino based examples for simple touch, simple fix and simple designer
+
+https://github.com/Synthux-Academy/simple-templates/
+
+--
+
+For now I want to start the migration process without any of these advanced (manual / docs) aggregation ideas. And just focus on moving the official Instruments and make them adhere to the template.
+
+The suggested structure should be fairly simple and non obligated, and work for all types of projects? ino, cpp, pd.
+We should have a minimum requirement perhaps?
+3 seperate templates for cpp ino and pd?
+
+/Source
+/lib
+/img
+/docs
+main.cpp 
+README.md
+
+
+One thing to ask for is that we start using releases, instead of just building one .bin inside the main repo.
+
+
+---
+---
+---
+
+
+
 ## ideas collector:
 
 [message on Discord](https://discord.com/channels/802197755442626590/1479142494946984008/1501726629138010214) following up a question on how I (jonwtr) think a unified manual could look like:

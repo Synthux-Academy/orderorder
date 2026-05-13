@@ -1,0 +1,287 @@
+{
+  "id": "tribal-touch",
+  "name": "TribalTouch",
+  "type": "Generative Groovebox",
+  "author": "TribalTouch Developer",
+  "binary_url": "",
+  "source_url": "",
+  "description": "A generative, 7-voice polyrhythmic drum machine and techno groovebox featuring deep Euclidean sequencing and live performance macros.",
+  "features": {
+    "usb_midi": false,
+    "external_sync": ""
+  },
+  "mappings": [
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S30",
+      "modifiers": [],
+      "parameter": "Density Bias",
+      "description": "Left thins non-kick hits. Right adds soft ghost hits. (P03 Kick protected)",
+      "type": "knob"
+    },
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S31",
+      "modifiers": [],
+      "parameter": "Decay Bias",
+      "description": "Multiplier. Left shortens tails, right lengthens them within limits.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S32",
+      "modifiers": [],
+      "parameter": "Velocity / Humanize",
+      "description": "Left softens kit. Right adds hit-to-hit velocity movement/lift.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S33",
+      "modifiers": [],
+      "parameter": "Timing Feel",
+      "description": "Left pushes 16ths. Right lays back / swings. Tempo remains stable.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S34",
+      "modifiers": [],
+      "parameter": "Tone / Material",
+      "description": "Left darkens/smooths. Right brightens/adds edge.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S35",
+      "modifiers": [],
+      "parameter": "Chaos Amount",
+      "description": "Adds controlled playback probability/velocity variation. (P03 Kick protected)",
+      "type": "knob"
+    },
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S36",
+      "modifiers": [],
+      "parameter": "Performance Filter",
+      "description": "DJ-style filter. Left = low-pass, Right = high-pass. Center bypass is smoothed.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Default State (Global Macros)",
+      "primary_control": "S37",
+      "modifiers": [],
+      "parameter": "Master Volume",
+      "description": "Final stage level before soft limiter.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S30",
+      "modifiers": [],
+      "parameter": "Voice Edit: Hits",
+      "description": "Number of Euclidean hits in the pattern (0-16).",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S31",
+      "modifiers": [],
+      "parameter": "Voice Edit: Length",
+      "description": "Total length of the pattern (1-16 steps).",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S32",
+      "modifiers": [],
+      "parameter": "Voice Edit: Offset",
+      "description": "Rotates the pattern against the main downbeat.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S33",
+      "modifiers": [],
+      "parameter": "Voice Edit: Velocity",
+      "description": "Stored base volume level for this specific voice.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S34",
+      "modifiers": [],
+      "parameter": "Voice Edit: Decay",
+      "description": "Tail length. Ranges are shaped per role (kicks can be longer than hats).",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S35",
+      "modifiers": [],
+      "parameter": "Voice Edit: Probability",
+      "description": "Chance that programmed hits will successfully trigger.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S36",
+      "modifiers": [],
+      "parameter": "Voice Edit: Material",
+      "description": "Timbre morph. Lower = sine/rounder, Higher = triangle/noise/brighter.",
+      "type": "knob"
+    },
+    {
+      "state_context": "Voice Edit State (Hold P03-P09 for 1s)",
+      "primary_control": "S37",
+      "modifiers": [],
+      "parameter": "Voice Edit: Pitch / Octave",
+      "description": "Fundamental tuning for the voice. Also moves noise bands for hats/shakers.",
+      "type": "knob"
+    },
+    {
+      "state_context": "P10 Shift Layer",
+      "primary_control": "S30",
+      "modifiers": [
+        "P10"
+      ],
+      "parameter": "Reverb Size",
+      "description": "Adjusts global reverb decay.",
+      "type": "combo_knob"
+    },
+    {
+      "state_context": "P10 Shift Layer",
+      "primary_control": "S31",
+      "modifiers": [
+        "P10"
+      ],
+      "parameter": "Reverb Mix",
+      "description": "Adjusts global reverb wet/dry blend.",
+      "type": "combo_knob"
+    },
+    {
+      "state_context": "P10 Shift Layer",
+      "primary_control": "S37",
+      "modifiers": [
+        "P10"
+      ],
+      "parameter": "BPM (Tempo)",
+      "description": "Adjusts the master tempo of the sequencer.",
+      "type": "combo_knob"
+    },
+    {
+      "state_context": "Global Settings",
+      "primary_control": "S07-S08",
+      "modifiers": [],
+      "parameter": "Polyrhythmic Grid Shift",
+      "description": "Up: 12-Step Grid (6/8 feel). Middle: 16-Step Grid (Standard 4/4). Down: 15-Step Grid (Odd meter).",
+      "type": "switch"
+    },
+    {
+      "state_context": "Global Settings",
+      "primary_control": "S09-S10",
+      "modifiers": [],
+      "parameter": "Starter Presets & Banks",
+      "description": "Up: TribalStyle 1 (Psy/Hard). Middle: TribalStyle 2 (Core). Down: TribalStyle 3 (Chill/Relaxed).",
+      "type": "switch"
+    },
+    {
+      "state_context": "The Seven Voice Roles",
+      "primary_control": "P03",
+      "modifiers": [],
+      "parameter": "Kick Anchor Voice",
+      "description": "Four-on-the-floor. Extra body, short pitch drop. Protected from destructive global macros.",
+      "type": "pad"
+    },
+    {
+      "state_context": "The Seven Voice Roles",
+      "primary_control": "P04",
+      "modifiers": [],
+      "parameter": "Low Tom / Pulse Voice",
+      "description": "Low support. Useful for call-and-response with the P03 Kick.",
+      "type": "pad"
+    },
+    {
+      "state_context": "The Seven Voice Roles",
+      "primary_control": "P05",
+      "modifiers": [],
+      "parameter": "Mid Accent Voice",
+      "description": "Snare/Clap-like. S36 adds brighter edge, S34 controls the tail length.",
+      "type": "pad"
+    },
+    {
+      "state_context": "The Seven Voice Roles",
+      "primary_control": "P06",
+      "modifiers": [],
+      "parameter": "Closed Hat Voice",
+      "description": "Short high percussion. Band-limited noise plus pitched tone. S37 Pitch is highly audible.",
+      "type": "pad"
+    },
+    {
+      "state_context": "The Seven Voice Roles",
+      "primary_control": "P07",
+      "modifiers": [],
+      "parameter": "Shaker / Texture Voice",
+      "description": "Repeating high motion. Softer than P06, band-limited to avoid raw distortion.",
+      "type": "pad"
+    },
+    {
+      "state_context": "The Seven Voice Roles",
+      "primary_control": "P08",
+      "modifiers": [],
+      "parameter": "Wood Block Voice",
+      "description": "Dry block percussion. Great for syncopated mid/high patterns and tribal rim clicks.",
+      "type": "pad"
+    },
+    {
+      "state_context": "The Seven Voice Roles",
+      "primary_control": "P09",
+      "modifiers": [],
+      "parameter": "Rim / Sync Tom Voice",
+      "description": "Rim/Tom accent. Works beautifully with shorter sequence lengths or aggressive offsets.",
+      "type": "pad"
+    },
+    {
+      "state_context": "Recovery Gestures",
+      "primary_control": "P00",
+      "modifiers": [],
+      "parameter": "Mute Low/Mid Support",
+      "description": "Hold to fast-fade and mute P04 Tom, P05 Accent, and P08 Block.",
+      "type": "pad"
+    },
+    {
+      "state_context": "Recovery Gestures",
+      "primary_control": "P02",
+      "modifiers": [],
+      "parameter": "Mute High Syncopated",
+      "description": "Hold to fast-fade and mute P06 Hat, P07 Shaker, and P09 Rim.",
+      "type": "pad"
+    },
+    {
+      "state_context": "Recovery Gestures",
+      "primary_control": "P11",
+      "modifiers": [],
+      "parameter": "Kick-Only Focus",
+      "description": "Hold once to mute all voices except P03 Kick. Hold again to restore previous voices.",
+      "type": "pad"
+    },
+    {
+      "state_context": "Recovery Gestures",
+      "primary_control": "P01",
+      "modifiers": [],
+      "parameter": "Restore Phrase",
+      "description": "Hold to restore sequence parameters for the current preset while keeping muted states intact.",
+      "type": "pad"
+    },
+    {
+      "state_context": "Recovery Gestures",
+      "primary_control": "P01",
+      "modifiers": [
+        "P11"
+      ],
+      "parameter": "Panic / Boot-Kit Recovery",
+      "description": "Mutes voices, restores starter pattern, zeroes reverb, neutralizes macros, and resets BPM.",
+      "type": "combo_pad"
+    }
+  ]
+}
