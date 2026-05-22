@@ -250,13 +250,13 @@ Plugdata is a visual programmer based on PureData; though patches made with this
 
 [hvcc](https://wasted-audio.github.io/hvcc/) - Heavy compiler collection — a Python-based dataflow audio programming language compiler that generates C/C++ code and a variety of specific framework wrappers.
 
-- [getting started (hvcc docs)](https://github.com/Wasted-Audio/hvcc/blob/develop/docs/01.introduction.md)
-- [Tips & Tricks and known limitations (hvcc docs)](https://github.com/Wasted-Audio/hvcc/blob/develop/docs/02.getting_started.md)
-- [Plug Data – Compiling Patches with heavy](https://plugdata.org/docs/book/CompilingPatches.html)
+- [Getting Started (hvcc docs)](https://wasted-audio.github.io/hvcc/getting-started/)
+- [Patching Guide & Known Limitations (hvcc docs)](https://wasted-audio.github.io/hvcc/getting-started/#patching-guide)
+- [Plug Data – Compiling Patches with heavy](https://plugdata.org/docs/CompilingPatches.html)
 - [Plug Data and Heavy - Wasted Audio YouTube Channel](https://www.youtube.com/@Wasted-Audio)
-- [Supported Vanilla Objects (hvcc docs)](https://github.com/Wasted-Audio/hvcc/blob/develop/docs/09.supported_vanilla_objects.md)
-- [Unsupported Vanilla Objects (hvcc docs)](https://github.com/Wasted-Audio/hvcc/blob/develop/docs/10.unsupported_vanilla_objects.md)
-- [Daisy Section in the hvcc docs](https://github.com/Wasted-Audio/hvcc/blob/develop/docs/03.gen.daisy.md)
+- [Supported Vanilla Objects (hvcc docs)](https://wasted-audio.github.io/hvcc/reference/supported_objects/)
+- [Unsupported Vanilla Objects (hvcc docs)](https://wasted-audio.github.io/hvcc/reference/unsupported_objects/)
+- [Daisy Section in the hvcc docs](https://wasted-audio.github.io/hvcc/generators/daisy/)
 
 [Daisy Seed and plugdata](https://jasperkempf.github.io/DIY-Synth-DaisySeed-and-PlugData/) - guide by **Jasper Kempf** that goes over all the basics, useful for all Daisy related designs
 
