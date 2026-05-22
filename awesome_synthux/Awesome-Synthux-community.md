@@ -247,20 +247,23 @@ Note that it is also possible to use e.g. VSCode to program Arduino’s - though
 Plugdata is a visual programmer based on PureData; though patches made with this method cannot be uploaded as is, HVCC is integrated into Plugdata; it converts pd to compiled code that can be uploaded to Daisy (as well as other formats from full plugins to game related code). HVCC is the Heavy compiler maintained by one of the members who have joined the community: dreamer, aka Wasted Audio. 
 
 [Plugdata.org](http://Plugdata.org) - official plugdata website, stable and nightly releases
+- [Plugdata documentation](https://plugdata.org/docs/)
+
 
 [hvcc](https://wasted-audio.github.io/hvcc/) - Heavy compiler collection — a Python-based dataflow audio programming language compiler that generates C/C++ code and a variety of specific framework wrappers.
 
 - [Getting Started (hvcc docs)](https://wasted-audio.github.io/hvcc/getting-started/)
 - [Patching Guide & Known Limitations (hvcc docs)](https://wasted-audio.github.io/hvcc/getting-started/#patching-guide)
-- [Plug Data – Compiling Patches with heavy](https://plugdata.org/docs/CompilingPatches.html)
-- [Plug Data and Heavy - Wasted Audio YouTube Channel](https://www.youtube.com/@Wasted-Audio)
-- [Supported Vanilla Objects (hvcc docs)](https://wasted-audio.github.io/hvcc/reference/supported_objects/)
-- [Unsupported Vanilla Objects (hvcc docs)](https://wasted-audio.github.io/hvcc/reference/unsupported_objects/)
+- [Plugdata and Heavy - Wasted Audio YouTube Channel](https://www.youtube.com/@Wasted-Audio)
+- [Supported Vanilla Objects (hvcc docs)](https://wasted-audio.github.io/hvcc/reference/objects/supported/)
+- [Unsupported Vanilla Objects (hvcc docs)](https://wasted-audio.github.io/hvcc/reference/objects/unsupported/)
 - [Daisy Section in the hvcc docs](https://wasted-audio.github.io/hvcc/generators/daisy/)
+
+#### Pd/Plugdata+Daisy guides
 
 [Daisy Seed and plugdata](https://jasperkempf.github.io/DIY-Synth-DaisySeed-and-PlugData/) - guide by **Jasper Kempf** that goes over all the basics, useful for all Daisy related designs
 
-[Beginners guide to programming Daisy with Plugdata](https://jonwaterschoot.github.io/plugdata-daisy-simple/) - unfinished guide started by jonwtr as he was learning plugdata while using Synthux boards
+[Beginners guide to programming Daisy with Plugdata](https://jonwaterschoot.github.io/plugdata-daisy-simple/) - ***unfinished / slightly outdated*** guide by **jonwtr** - written as he was learning plugdata while using Synthux boards
 
 - can be applied to general Daisy seed - geared towards Simple boards and Simple Touch
 - contains examples on how to implement components like potentiometers and switches
@@ -269,11 +272,11 @@ Plugdata is a visual programmer based on PureData; though patches made with this
 
 [Awesome Puredata](https://github.com/MikeMorenoDSP/awesome-puredata) - list of Pure Data documentation and other useful resources
 
-#### Pure Data / Plug Data lessons
+#### Pure Data / Plugdata lessons
 
 [QCGInteractiveMusic - Realtime Music and Sound with Pure Data Vanilla](https://youtu.be/SLx7kjuFheY?si=Al6hmUHhqnK8-pkg) - YouTube series
 
-[Sound Codex - Plug Data Introduction](https://www.youtube.com/watch?v=EoOEZYn4xdA) - YouTube intro
+[Sound Codex - Plugdata Introduction](https://www.youtube.com/watch?v=EoOEZYn4xdA) - YouTube intro
 
 [Sound Simulator - Pure Data Tutorial Series](https://youtu.be/1o5Wasmd8yU?si=8Cyid-OEyHV6KcKr) - YouTube series
 
